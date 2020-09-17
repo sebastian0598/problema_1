@@ -6,6 +6,10 @@ class alumno():
     nombre = input("digite el nombre del alumno: ")
     nota = float(input("digite la nota del alumno: "))
     print ("")
+    def mostrar_datos(self):
+        print(f"el nombre del alumno es: {self.nombre}")
+        print(f"su nota es: {self.nota}")
+        print("")
 
     def calcular_nota(self):
         if ((self.nota >= 3) and (self.nota <=5)):
@@ -17,6 +21,7 @@ class alumno():
 
 def main():
     alumno1 = alumno()
+    alumno1.calcular_nota()
     alumno1.calcular_nota()
 
     
